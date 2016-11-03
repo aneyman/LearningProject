@@ -14,6 +14,7 @@ public class ChromeTest {
         WebDriver driver = new ChromeDriver();
         driver.get("http://mail.ru");
         driver.manage().window().maximize();
+        driver.quit();
 
     }
 

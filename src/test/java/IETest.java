@@ -21,6 +21,8 @@ public class IETest {
         WebDriver driver = new InternetExplorerDriver();
         driver.get("http://google.com");
         driver.manage().window().maximize();
+        driver.quit();
+
 
     }
 }

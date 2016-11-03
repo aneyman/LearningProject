@@ -1,4 +1,5 @@
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.MarionetteDriver;
 import org.testng.annotations.Test;
 
@@ -11,9 +12,10 @@ public class FirefoxTest {
     public void firefoxTestMethod() {
 
         System.setProperty("webdriver.gecko.driver", "D:\\SELENIUM\\Library\\geckodriver.exe");
-        WebDriver driverFirefox = new MarionetteDriver();
-        driverFirefox.get("http://rediffmail.com");
-        driverFirefox.manage().window().maximize();
+        WebDriver driver = new FirefoxDriver();
+        driver.get("http://rediffmail.com");
+        driver.manage().window().maximize();
+        driver.quit();
     }
 
 
